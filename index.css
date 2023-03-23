@@ -1,0 +1,208 @@
+@font-face {
+  font-family: "Alura";
+  src: url(../assets/fonts/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../assets/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../assets/fonts/Roboto-light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+}
+
+a,
+a:visited {
+  color: white;
+}
+
+#img0 {
+  height: 30px;
+}
+
+h4 {
+  font-family: Alura;
+  color: rgb(179, 116, 0);
+  font-weight: 200;
+}
+
+header {
+  background: url(../assets/img/bg-slider-06.jpg) center/cover;
+  height: 100vh;
+  color: white;
+}
+header nav {
+  display: grid;
+  grid-template-columns: 20% 70% 10%;
+  align-items: center;
+  justify-content: space-around;
+  height: 90px;
+  width: 85%;
+  margin: 0 auto;
+}
+header nav h2 {
+  font-family: Alura;
+  font-size: 3rem;
+}
+header nav li {
+  font-size: 0.9rem;
+  font-family: Roboto;
+  font-weight: 200;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+header nav li:hover {
+  scale: 1.1;
+}
+header nav .ul-left {
+  display: flex;
+  justify-content: space-evenly;
+}
+header nav .ul-right {
+  display: flex;
+  justify-content: space-around;
+}
+header .header-container {
+  margin-top: 150px;
+  line-height: 40px;
+}
+header .header-container h4 {
+  font-size: 3.2rem;
+}
+header .header-container h1 {
+  font-family: Poppins;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  letter-spacing: 7px;
+  top: 0;
+  display: block;
+}
+header .header-container img {
+  margin: 60px 0 15px;
+  height: 30px;
+}
+header .header-container p {
+  letter-spacing: 5px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: rgb(240, 240, 240);
+  font-family: Poppins;
+}
+
+main {
+  background: rgb(37, 36, 36);
+}
+main .presentation {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+}
+main .presentation .left-part-container {
+  background: rgb(240, 240, 240);
+}
+main .presentation .left-part-container .left-part {
+  margin: 20px;
+  padding: 50px 10px 30px;
+  border: 1px dashed rgb(179, 116, 0);
+}
+main .presentation .left-part-container h4 {
+  font-size: 2rem;
+  line-height: 10px;
+}
+main .presentation .left-part-container h3 {
+  font-family: Poppins;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+main .presentation .left-part-container #img0 {
+  margin: 20px;
+}
+main .presentation .left-part-container p {
+  font-size: 1.1rem;
+  font-family: Roboto;
+}
+main .presentation .left-part-container img {
+  border-radius: 50px;
+  height: 70px;
+  margin: 20px;
+}
+main .presentation h5 {
+  font-family: Roboto;
+  font-size: 1rem;
+}
+main .presentation h6 {
+  font-family: Roboto;
+  font-size: 0.7rem;
+  color: rgb(199, 199, 199);
+  text-transform: uppercase;
+}
+main .presentation .right-part {
+  background: url(../assets/img/store-01.jpg) center/cover;
+  height: 100%;
+}
+main .menu h4 {
+  font-size: 2rem;
+  padding: 40px 0 30px;
+}
+main .menu ul {
+  display: flex;
+  justify-content: space-around;
+  max-width: 60%;
+  margin: 30px auto;
+}
+main .menu li {
+  font-size: 1rem;
+  font-family: Roboto;
+  position: relative;
+}
+main .menu li::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: white;
+  bottom: -10px;
+  left: 0;
+}
+main .menu .menu-container {
+  padding: 30px 20px 40px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background: rgb(240, 240, 240);
+  text-align: left;
+  max-width: 60%;
+  margin: 0 auto;
+}
+main .menu .menu-container h5 {
+  font-family: Roboto;
+  font-size: 0.7rem;
+  color: black;
+  text-transform: uppercase;
+}
+main .menu .menu-container h6 {
+  font-family: Roboto;
+  color: rgb(199, 199, 199);
+  font-size: 0.8rem;
+}
+main .menu .menu-container p {
+  color: rgb(179, 116, 0);
+  font-family: Poppins;
+}
+main .menu .menu-container img {
+  height: 80px;
+  border-radius: 50px;
+  margin: 10px 0;
+}
+main .menu .menu-container .menu-left {
+  display: grid;
+  grid-template-columns: 20% 70% 10%;
+  align-items: center;
+}/*# sourceMappingURL=index.css.map */

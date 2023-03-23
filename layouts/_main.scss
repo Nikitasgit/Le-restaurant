@@ -1,0 +1,115 @@
+main {
+  background: rgb(37, 36, 36);
+  .presentation {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+
+    .left-part-container {
+      background: $color2light;
+
+      .left-part {
+        margin: 20px;
+        padding: 50px 10px 30px;
+        border: 1px dashed $color4;
+      }
+      h4 {
+        font-size: 2rem;
+        line-height: 10px;
+      }
+      h3 {
+        font-family: $font2;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+      }
+      #img0 {
+        margin: 20px;
+      }
+      p {
+        font-size: 1.1rem;
+        font-family: $font3;
+      }
+      img {
+        border-radius: 50px;
+        height: 70px;
+        margin: 20px;
+      }
+    }
+    h5 {
+      font-family: $font3;
+      font-size: 1rem;
+    }
+    h6 {
+      font-family: $font3;
+      font-size: 0.7rem;
+      color: $color2;
+      text-transform: uppercase;
+    }
+    .right-part {
+      background: url(../assets/img/store-01.jpg) center/cover;
+      height: 100%;
+    }
+  }
+  .menu {
+    h4 {
+      font-size: 2rem;
+      padding: 40px 0 30px;
+    }
+    ul {
+      display: flex;
+      justify-content: space-around;
+      max-width: 60%;
+      margin: 30px auto;
+    }
+    li {
+      font-size: 1rem;
+      font-family: $font3;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background: $color1;
+        bottom: -10px;
+        left: 0;
+      }
+    }
+    .menu-container {
+      padding: 30px 20px 40px;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      background: $color2light;
+      text-align: left;
+      h5 {
+        font-family: $font3;
+        font-size: 0.7rem;
+        color: $color3;
+        text-transform: uppercase;
+      }
+      h6 {
+        font-family: $font3;
+        color: $color2;
+        font-size: 0.8rem;
+      }
+      p {
+        color: $color4;
+        font-family: $font2;
+      }
+
+      max-width: 60%;
+      margin: 0 auto;
+      img {
+        height: 80px;
+        border-radius: 50px;
+        margin: 10px 0;
+      }
+      .menu-left {
+        display: grid;
+        grid-template-columns: 20% 70% 10%;
+        align-items: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+header {
+  background: url(../assets/img/bg-slider-06.jpg) center/cover;
+  height: 100vh;
+  color: $color1;
+  nav {
+    display: grid;
+    grid-template-columns: 20% 70% 10%;
+    align-items: center;
+    justify-content: space-around;
+    height: 90px;
+    width: 85%;
+    margin: 0 auto;
+    h2 {
+      font-family: $font1;
+      font-size: 3rem;
+    }
+    li {
+      font-size: 0.9rem;
+      font-family: $font3;
+      font-weight: 200;
+      text-transform: uppercase;
+      transition: 0.2s;
+      &:hover {
+        scale: 1.1;
+      }
+    }
+    .ul-left {
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .ul-right {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  .header-container {
+    margin-top: 150px;
+    line-height: 40px;
+    h4 {
+      font-size: 3.2rem;
+    }
+    h1 {
+      font-family: $font2;
+      text-transform: uppercase;
+      font-size: 3.5rem;
+      letter-spacing: 7px;
+      top: 0;
+      display: block;
+    }
+    img {
+      margin: 60px 0 15px;
+      height: 30px;
+    }
+    p {
+      letter-spacing: 5px;
+      font-size: 1rem;
+      text-transform: uppercase;
+      color: $color2light;
+      font-family: $font2;
+    }
+  }
+}
