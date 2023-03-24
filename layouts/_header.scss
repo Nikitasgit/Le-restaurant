@@ -20,6 +20,7 @@ header {
       font-weight: 200;
       text-transform: uppercase;
       transition: 0.2s;
+      cursor: pointer;
       &:hover {
         scale: 1.1;
       }
@@ -55,7 +56,7 @@ header {
       letter-spacing: 5px;
       font-size: 1rem;
       text-transform: uppercase;
-      color: $color2light;
+      color: $color2;
       font-family: $font2;
     }
   }
