@@ -20,6 +20,7 @@
 
 body {
   text-align: center;
+  background: rgb(37, 36, 36);
 }
 
 a,
@@ -44,16 +45,23 @@ header {
 }
 header nav {
   display: grid;
-  grid-template-columns: 20% 70% 10%;
+  grid-template-columns: 15% 75% 10%;
   align-items: center;
   justify-content: space-around;
   height: 90px;
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
+}
+@media screen and (max-width: 800px) {
+  header nav {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
 }
 header nav h2 {
   font-family: Alura;
   font-size: 3rem;
+  text-align: left;
 }
 header nav li {
   font-size: 0.9rem;
@@ -70,35 +78,71 @@ header nav .ul-left {
   display: flex;
   justify-content: space-evenly;
 }
+@media screen and (max-width: 800px) {
+  header nav .ul-left {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  header nav .ul-left li {
+    font-size: 0.8rem;
+  }
+}
 header nav .ul-right {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 800px) {
+  header nav .ul-right li {
+    font-size: 1.1rem;
+  }
 }
 header .header-container {
-  margin-top: 150px;
-  line-height: 40px;
+  width: 85%;
+  margin: 175px auto 0px;
+}
+@media screen and (max-width: 450px) {
+  header .header-container {
+    margin-top: 80px;
+  }
 }
 header .header-container h4 {
-  font-size: 3.2rem;
+  font-size: 3rem;
+  line-height: 0px;
+}
+@media screen and (max-width: 450px) {
+  header .header-container h4 {
+    line-height: 80px;
+  }
+}
+@media screen and (max-width: 450px) {
+  header .header-container h4 {
+    font-size: 2.5rem;
+  }
 }
 header .header-container h1 {
   font-family: Poppins;
   text-transform: uppercase;
-  font-size: 3.5rem;
-  letter-spacing: 7px;
+  font-size: 3.3rem;
+  letter-spacing: 10px;
   top: 0;
-  display: block;
 }
-header .header-container img {
-  margin: 60px 0 15px;
+@media screen and (max-width: 450px) {
+  header .header-container h1 {
+    font-size: 2.1rem;
+    letter-spacing: 7px;
+  }
+}
+header img {
+  margin: 30px;
   height: 30px;
 }
-header .header-container p {
+header p {
   letter-spacing: 5px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   color: rgb(199, 199, 199);
-  font-family: Poppins;
+  font-family: Roboto;
 }
 
 main {
@@ -109,11 +153,16 @@ main .presentation {
   grid-template-columns: 50% 50%;
   align-items: center;
 }
+@media screen and (max-width: 550px) {
+  main .presentation {
+    display: block;
+  }
+}
 main .presentation .left-part-container {
   background: rgb(240, 240, 240);
+  padding: 20px;
 }
 main .presentation .left-part-container .left-part {
-  margin: 20px;
   padding: 50px 10px 30px;
   border: 1px dashed rgb(179, 116, 0);
 }
@@ -174,6 +223,11 @@ main .menu ul {
   justify-content: space-around;
   margin: 30px auto;
 }
+@media screen and (max-width: 1100px) {
+  main .menu ul {
+    width: 80%;
+  }
+}
 main .menu li {
   font-size: 1rem;
   font-family: Roboto;
@@ -192,8 +246,13 @@ main .menu li::after {
   bottom: -10px;
   left: 0;
 }
+@media screen and (max-width: 370px) {
+  main .menu li {
+    font-size: 0.8rem;
+  }
+}
 main .menu .menu-container {
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -202,9 +261,19 @@ main .menu .menu-container {
   border-top: 5px solid rgb(179, 116, 0);
   line-height: 20px;
 }
+@media screen and (max-width: 1100px) {
+  main .menu .menu-container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 550px) {
+  main .menu .menu-container {
+    display: block;
+  }
+}
 main .menu .menu-container .menu-option {
   display: grid;
-  grid-template-columns: 30% 60% 10%;
+  grid-template-columns: 30% 55% 15%;
   align-items: center;
   padding: 30px 0;
   margin: 20px;
@@ -216,6 +285,11 @@ main .menu .menu-container h5 {
   color: black;
   text-transform: uppercase;
   text-align: left;
+}
+@media screen and (max-width: 800px) {
+  main .menu .menu-container h5 {
+    font-size: 0.7rem;
+  }
 }
 main .menu .menu-container h6 {
   font-family: Roboto;
@@ -231,19 +305,43 @@ main .menu .menu-container img {
   height: 80px;
   border-radius: 50px;
 }
+@media screen and (max-width: 750px) {
+  main .menu .menu-container img {
+    height: 55px;
+  }
+}
 main .reservation {
   margin: 60px auto;
   width: 75%;
   display: grid;
   grid-template-columns: 30% 70%;
 }
+@media screen and (max-width: 950px) {
+  main .reservation {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 950px) and (max-width: 730px) {
+  main .reservation {
+    display: block;
+  }
+}
 main .reservation .contact {
   background: black;
+  padding: 20px;
+}
+@media screen and (max-width: 730px) {
+  main .reservation .contact {
+    margin-bottom: 20px;
+  }
 }
 main .reservation .contact .contact-container {
   border: 1px dashed rgb(199, 199, 199);
-  margin: 20px;
-  padding: 40px 20px 50px;
+  padding: 40px 20px 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 main .reservation .contact .contact-container h4 {
   font-size: 1.9rem;
@@ -257,6 +355,8 @@ main .reservation .contact .contact-container h5 {
 }
 main .reservation .contact .contact-container #img0 {
   margin: 20px;
+  width: 25px;
+  margin: 0 auto;
 }
 main .reservation .contact .contact-container h6 {
   color: rgb(179, 116, 0);
@@ -275,6 +375,11 @@ main .reservation .booking {
   background: rgb(240, 240, 240);
   padding: 70px;
 }
+@media screen and (max-width: 930px) {
+  main .reservation .booking {
+    padding: 40px;
+  }
+}
 main .reservation .booking h4 {
   font-size: 2.2rem;
   line-height: 10px;
@@ -292,6 +397,17 @@ main .reservation .booking form {
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
 }
+@media screen and (max-width: 1250px) {
+  main .reservation .booking form {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 930px) {
+  main .reservation .booking form {
+    display: flex;
+    flex-direction: column;
+  }
+}
 main .reservation .booking input {
   border: none;
   font-family: Roboto;
@@ -301,6 +417,7 @@ main .reservation .booking input {
   background: none;
   font-size: 0.8rem;
   outline: none;
+  width: 80%;
 }
 main .reservation .booking button {
   border: none;
@@ -321,6 +438,16 @@ main .reservation .booking button:hover {
 main .events {
   width: 70%;
   margin: 100px auto 50px;
+}
+@media screen and (max-width: 640px) {
+  main .events {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 490px) {
+  main .events {
+    display: none;
+  }
 }
 main .events h4 {
   font-size: 2.5rem;
@@ -360,6 +487,11 @@ main .events .events-container h4 {
   font-family: Roboto;
   color: black;
   font-size: 1rem;
+}
+@media screen and (max-width: 740px) {
+  main .events .events-container h4 {
+    font-size: 0.8rem;
+  }
 }
 main .events .events-container p {
   font-family: Roboto;
@@ -447,6 +579,11 @@ main .infos .text-container {
   margin: 0 auto;
   position: relative;
 }
+@media screen and (max-width: 650px) {
+  main .infos .text-container {
+    width: 90%;
+  }
+}
 main .infos .text-container:before {
   content: "";
   position: absolute;
@@ -457,6 +594,9 @@ main .infos .text-container:before {
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+main .infos p {
+  font-size: 0.9rem;
 }
 main .infos h4 {
   font-size: 1.3rem;
@@ -472,6 +612,11 @@ footer {
   background: url(../assets/img/bg-footer.jpg) center/cover;
   text-align: left;
 }
+@media screen and (max-width: 550px) {
+  footer {
+    background: none;
+  }
+}
 footer .footer-container {
   display: grid;
   align-items: center;
@@ -479,8 +624,23 @@ footer .footer-container {
   width: 70%;
   margin: 0 auto;
 }
+@media screen and (max-width: 860px) {
+  footer .footer-container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 550px) {
+  footer .footer-container {
+    display: block;
+  }
+}
 footer .footer-container .footer-left {
   padding: 60px 30px 30px 0;
+}
+@media screen and (max-width: 550px) {
+  footer .footer-container .footer-left {
+    display: none;
+  }
 }
 footer .footer-container .footer-left h4 {
   font-size: 2.2rem;
@@ -490,6 +650,11 @@ footer .footer-container .footer-left p {
   color: rgb(70, 66, 66);
   font-family: Roboto;
   font-family: 0rem;
+}
+@media screen and (max-width: 650px) {
+  footer .footer-container .footer-left p {
+    font-size: 0.8rem;
+  }
 }
 footer .footer-container .footer-right {
   padding: 60px 0 30px 30px;
@@ -508,7 +673,7 @@ footer .footer-container .footer-right form input {
   color: rgb(199, 199, 199);
 }
 footer .footer-container .footer-right .icons-footer {
-  width: 70%;
+  width: 90%;
   display: grid;
   grid-template-columns: 30% 70%;
 }

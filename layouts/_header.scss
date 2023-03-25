@@ -4,15 +4,20 @@ header {
   color: $color1;
   nav {
     display: grid;
-    grid-template-columns: 20% 70% 10%;
+    grid-template-columns: 15% 75% 10%;
     align-items: center;
     justify-content: space-around;
     height: 90px;
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
+    @media screen and (max-width: 800px) {
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
     h2 {
       font-family: $font1;
       font-size: 3rem;
+      text-align: left;
     }
     li {
       font-size: 0.9rem;
@@ -28,36 +33,62 @@ header {
     .ul-left {
       display: flex;
       justify-content: space-evenly;
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
+      li {
+        @media screen and (max-width: 1000px) {
+          font-size: 0.8rem;
+        }
+      }
     }
     .ul-right {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-evenly;
+      li {
+        @media screen and (max-width: 800px) {
+          font-size: 1.1rem;
+        }
+      }
     }
   }
   .header-container {
-    margin-top: 150px;
-    line-height: 40px;
+    width: 85%;
+    margin: 175px auto 0px;
+    @media screen and (max-width: 450px) {
+      margin-top: 80px;
+    }
     h4 {
-      font-size: 3.2rem;
+      font-size: 3rem;
+      line-height: 0px;
+      @media screen and (max-width: 450px) {
+        line-height: 80px;
+      }
+      @media screen and (max-width: 450px) {
+        font-size: 2.5rem;
+      }
     }
     h1 {
       font-family: $font2;
       text-transform: uppercase;
-      font-size: 3.5rem;
-      letter-spacing: 7px;
+      font-size: 3.3rem;
+      letter-spacing: 10px;
       top: 0;
-      display: block;
+      @media screen and (max-width: 450px) {
+        font-size: 2.1rem;
+        letter-spacing: 7px;
+      }
     }
-    img {
-      margin: 60px 0 15px;
-      height: 30px;
-    }
-    p {
-      letter-spacing: 5px;
-      font-size: 1rem;
-      text-transform: uppercase;
-      color: $color2;
-      font-family: $font2;
-    }
+  }
+  img {
+    margin: 30px;
+    height: 30px;
+  }
+  p {
+    letter-spacing: 5px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: $color2;
+    font-family: $font3;
   }
 }
